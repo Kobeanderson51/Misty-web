@@ -1,0 +1,88 @@
+/* Overall styling for the Education section */
+.eduh2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1803a5; /* Dark Blue Color */
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 2px;
+}
+
+/* Background Image Styling */
+.edu-bg-img {
+    background-image: url("../../../public/images/page40universityofphoenix_1200xx3888-2187-0-203.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 680px;
+    width: 100%;
+    position: relative;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+}
+
+/* Overlay to darken the background image */
+.edu-bg-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Centered content inside the background image */
+.edu-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    max-width: 800px; /* Adjusted max-width for better text alignment */
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent background for readability */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow around the content */
+}
+
+/* Degree Title Styling */
+.edu-degree {
+    font-size: 2rem; /* Larger font for the degree titles */
+    font-weight: 600; /* Slightly bold */
+    margin-bottom: 15px;
+    color: #1803a5;
+    line-height: 1.4; /* Adds some space between each line */
+}
+
+/* Logo Image Styling */
+.company-logo {
+    width: 100%; /* Make the logo take the full width of its container */
+    max-width: 400px; /* Optionally set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px;
+    transition: transform 0.3s ease; /* Smooth scale effect on hover */
+}
+
+.company-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .edu-content {
+        padding: 20px;
+    }
+
+    .edu-degree {
+        font-size: 1.6rem; /* Slightly smaller font on mobile */
+        margin-bottom: 10px;
+    }
+
+    .company-logo {
+        max-width: 200px; /* Adjust logo size on smaller screens */
+    }
+}

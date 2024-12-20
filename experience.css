@@ -1,0 +1,78 @@
+
+/* Center the entire Experience section */
+h3.experience-ex {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 50px;
+    font-weight:600;
+    color: #007BFF; /* Blue color */
+}
+
+/* Add a blue line under the title */
+h3.experience-ex::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #007BFF;
+    margin-top: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style for each experience item */
+.experience-item {
+    display: flex;
+    align-items: center;  /* Aligns the content vertically */
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 900px;
+    width: 90%;
+}
+
+/* Left content (Company Logo and Name) */
+.left-content-ex {
+    margin-right: 55px;
+    flex: 1;
+    display: flex;
+    justify-content: center;  /* Horizontally center the logo */
+    align-items: center;      /* Vertically center the logo */
+    text-align: center;       /* Ensure text is centered */
+}
+
+/* Company Logo Styling */
+.company-logo {
+    width: 210px; /* Adjust this based on your logo size */
+    height: auto;
+}
+
+/* Right content (Job Title, Duration, Description) */
+.right-content-ex {
+    flex: 2;
+    color: #333;
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+}
+
+.right-content-ex p {
+    margin: 5px 0;
+}
+
+/* Make job titles and durations stand out */
+.duration-ex {
+    font-weight: bold;
+    color: #007BFF; /* Blue color */
+}
+
+.title-ex {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.description-ex {
+    font-size: 0.95rem;
+    margin-top: 10px;
+    color: #555;
+}
