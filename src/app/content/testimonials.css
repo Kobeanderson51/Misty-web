@@ -1,0 +1,75 @@
+/* Container for the testimonials section */
+.test {
+    margin: 40px auto; /* Margin for spacing */
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 800px; /* Maximum width */
+    text-align: center;
+}
+
+/* Heading for the testimonials section */
+.test-head {
+    color: #1803a5; /* Primary color */
+    font-size: 2.5rem; /* Font size for heading */
+    margin-bottom: 20px; /* Space below heading */
+    font-weight: 700; /* Bold weight for emphasis */
+}
+
+/* Styling for individual testimonial block */
+.test-text {
+    background-color: #fff; /* White background for the text */
+    padding: 20px;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the testimonial card */
+    margin-bottom: 30px; /* Space between multiple testimonials */
+    text-align: center; /* Align text to the left for readability */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+/* Hover effect for the testimonial */
+.test-text:hover {
+    transform: translateY(-5px); /* Move the element slightly upwards on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Increase the shadow for more depth */
+}
+
+/* Name and title of the person giving the testimonial */
+.test-text h3 {
+    color: #1803a5; /* Darker text for the name */
+    font-size: 1.4rem; /* Slightly larger font for the name */
+    font-weight: 600; /* Make the name bold */
+    margin-bottom: 10px; /* Spacing below the name */
+}
+
+/* The testimonial text itself */
+.test-text p {
+    color: #1803a5; /* Dark gray for the testimonial text */
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    line-height: 1.6; /* Improved line height for readability */
+    font-style: italic; /* Make the testimonial italic */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .test {
+        padding: 20px;
+        margin: 20px; /* Reduce margin for small screens */
+    }
+
+    .test-head {
+        font-size: 2rem; /* Reduce heading size on small screens */
+    }
+
+    .test-text {
+        padding: 15px;
+    }
+
+    .test-text h3 {
+        font-size: 1.2rem; /* Smaller name font size */
+    }
+
+    .test-text p {
+        font-size: 1rem; /* Smaller testimonial text */
+    }
+}

@@ -1,0 +1,42 @@
+.back-to-top {
+    position: fixed;
+    bottom: 30px; /* Adjust the distance from the bottom */
+    right: 30px;  /* Adjust the distance from the right */
+    background: linear-gradient(145deg, #007bff, #00c6ff); /* Gradient background */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;  /* Increase padding for a larger button */
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    transition: all 0.3s ease-in-out;  /* Smooth transitions */
+}
+
+.back-to-top:hover {
+    background: linear-gradient(145deg, #0056b3, #00a3e0); /* Darker gradient on hover */
+    transform: translateY(-5px); /* Button moves up on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+.back-to-top:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+.back-to-top svg {
+    width: 24px; /* Set width of the arrow icon */
+    height: 24px; /* Set height of the arrow icon */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for icon */
+}
+
+.back-to-top:hover svg {
+    transform: translateY(-3px); /* Slight movement of the arrow on hover */
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 20px; /* Adjust position on smaller screens */
+        right: 20px;  /* Adjust position on smaller screens */
+    }
+}

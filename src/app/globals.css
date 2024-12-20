@@ -3,13 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #white;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
@@ -18,4 +16,26 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background: white;
+  height: 100px;
+}
+/* Enables smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+/* Apply scroll-margin-top to all sections to prevent them from being hidden under a fixed navbar */
+#bio,
+#experience,
+#results,
+#expertise,
+#education,
+#meet-misty,
+#testimonials,
+#qqaa,
+#interests,
+#contact {
+    scroll-margin-top: 103px; /* Adjust this value to set how high you want the section to appear */
 }
